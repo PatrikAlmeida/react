@@ -8,6 +8,7 @@ import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
 import ShowUserName from './components/ShowUserName';
 import Fragments from './components/Fragments';
+import Container from './components/Container';
 
 
 
@@ -53,6 +54,13 @@ function App() {
       ))}
       {/* fragment */}
       <Fragments propFragments="teste" />
+      {/* children */}
+      <Container myValue="testing">
+        <p>E este é o conteúdo</p>
+      </Container>
+      <Container myValue="testing 2">
+        <h5>Testando o container</h5>
+      </Container>
     </div>
   );
 }
