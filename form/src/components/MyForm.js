@@ -12,6 +12,7 @@ const MyForm = () => {
     }
 
     console.log(name)
+    console.log(email)
 
 
   return (
@@ -25,7 +26,12 @@ const MyForm = () => {
         {/* 2- label envolvendo input */}
             <label>
                 <span>E-mail</span>
-                <input type="email" name="email" placeholder="Digite o seu e-mail" />
+                <input
+                 type="email" 
+                 name="email" 
+                 placeholder="Digite o seu e-mail" 
+                 onChange={(e) => setEmail(e.target.value)} 
+                 />
             </label>
             <input type="submit" value="Enviar" />
         </form>
